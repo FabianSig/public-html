@@ -1,13 +1,7 @@
-<h1>TINF22F: Jahr 2</h1>
-    <h4>Moodle und Webseiten</h4>
-    <ul>
-        <li><a href="https://elearning.dhbw-stuttgart.de/moodle/my/courses.php">Moodle</a></li>
-        <li><a href="https://elearning.dhbw-stuttgart.de/moodle/course/view.php?id=17338">Formale Sprachen und Automaten</a></li>
-        <li><a href="https://elearning.dhbw-stuttgart.de/moodle/course/view.php?id=17340">Datenbanken I</a></li>
-        <li><a href="https://wwwlehre.dhbw-stuttgart.de/~reimbold/">Betriebssysteme</a> (User: DHBW; PW: password)</li>
-        <li><a href="https://wwwlehre.dhbw-stuttgart.de/~lombardo/">Netztechnik</a></li>
-        <li><a href="https://elearning.dhbw-stuttgart.de/moodle/course/view.php?id=17337">Angewandte Mathematik</a></li>
-    </ul>
+<h1>TINF22F: Studienjahr 2</h1>
+    <h4>Moodle und Webseiten</h4>         
+    <app-links *ngFor="let item of links" [data]="item"></app-links>
+
     <h4>Github</h4>
     <ul>
         <li><a href="https://github.com/FabianSig/public-html">DHBW Landingpage</a></li>
@@ -18,4 +12,3 @@
         <li><a href="https://rapla.dhbw.de/rapla/internal_calendar?key=6Q0QSbNtpyeYPKQhnGFTaEN6AggaPdGgCFyhd5ANmjydX8WyDjUfLBh4YjDgat2dJd8as6Az5GGmQilBwJydDahhHroOQIPJaRqDM08XMobXMSGfsGtP4flVnON8wy0Y&salt=648736798&prev=%3C%3C&day=18&month=9&year=2023&pages=1">Rapla</a></li>
     </ul>
 
-    <app-links></app-links>
