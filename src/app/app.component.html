@@ -1,14 +1,9 @@
-<h1>TINF22F: Studienjahr 2</h1>
-    <h4>Moodle und Webseiten</h4>         
-    <app-links *ngFor="let item of links" [data]="item"></app-links>
+<h1 class="center">TINF22F: Studienjahr 2</h1>
+    <h4 class="center">Moodle und Webseiten</h4>         
+    <app-links *ngFor="let item of moodleLinks" [data]="item"></app-links>
 
-    <h4>Github</h4>
-    <ul>
-        <li><a href="https://github.com/FabianSig/public-html">DHBW Landingpage</a></li>
-        <li><a href="https://github.com/FabianSig/TINF22F_Team4_EDZ_Viewer_and_Converter">Software Engeneering</a> (Gruppe 4)</li>
-    </ul>
-    <h4>Rapla</h4>
-    <ul>
-        <li><a href="https://rapla.dhbw.de/rapla/internal_calendar?key=6Q0QSbNtpyeYPKQhnGFTaEN6AggaPdGgCFyhd5ANmjydX8WyDjUfLBh4YjDgat2dJd8as6Az5GGmQilBwJydDahhHroOQIPJaRqDM08XMobXMSGfsGtP4flVnON8wy0Y&salt=648736798&prev=%3C%3C&day=18&month=9&year=2023&pages=1">Rapla</a></li>
-    </ul>
+    <h4 class="center">Github</h4>
+    <app-links *ngFor="let item of githubLinks" [data]="item"></app-links>
+    <h4 class="center">Rapla</h4>
+
 
