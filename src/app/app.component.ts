@@ -1,13 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { LinkData } from './shared/link-data';
+import { Quote } from './shared/quote';
+import { QuoteService } from './shared/quote.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent{
+
   title = 'public-html';
+
+  quote?: Quote;
 
   dhbwLinks: LinkData[] = [
     {link: "https://elearning.dhbw-stuttgart.de/moodle/my/courses.php", name: "Moodle"},
@@ -33,5 +38,11 @@ export class AppComponent {
     {link: "https://github.com/FabianSig/public-html", name:"DHBW Landingpage"},
     {link: "https://github.com/FabianSig/TINF22F_Team4_EDZ_Viewer_and_Converter", name:"Software Engineering (Gruppe 4)"}
   ]
+
+  constructor(private service: QuoteService){
+    this.service.getQuote().subscribe(_quote => {
+      this.quote = _quote;
+    });
+  }
 
 }
