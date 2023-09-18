@@ -15,8 +15,6 @@ export class AppComponent{
 
   title = 'public-html';
 
-  quote?: Quote;
-
   dhbwLinks: LinkData[] = data.dhbwLinks;
   
   moduleLinks: LinkData[] = data.modulLinks;
