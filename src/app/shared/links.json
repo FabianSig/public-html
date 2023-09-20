@@ -32,10 +32,12 @@
             "name": "Moodle"
         },
         {
-            "link": "https://dualis.dhbw.de/scripts/mgrqispi.dll?APPNAME=CampusNet&PRGNAME=EXTERNALPAGES&ARGUMENTS=-N000000000000001,-N000324,-Awelcome", "name": "Dualis"
+            "link": "https://dualis.dhbw.de/scripts/mgrqispi.dll?APPNAME=CampusNet&PRGNAME=EXTERNALPAGES&ARGUMENTS=-N000000000000001,-N000324,-Awelcome", 
+            "name": "Dualis"
         },
         {
-            "link": "https://rapla.dhbw.de/rapla/internal_calendar?key=6Q0QSbNtpyeYPKQhnGFTaEN6AggaPdGgCFyhd5ANmjydX8WyDjUfLBh4YjDgat2dJd8as6Az5GGmQilBwJydDahhHroOQIPJaRqDM08XMobXMSGfsGtP4flVnON8wy0Y&salt=648736798", "name": "Vorlesungsplan (Rapla)"
+            "link": "https://rapla.dhbw.de/rapla/internal_calendar?key=6Q0QSbNtpyeYPKQhnGFTaEN6AggaPdGgCFyhd5ANmjydX8WyDjUfLBh4YjDgat2dJd8as6Az5GGmQilBwJydDahhHroOQIPJaRqDM08XMobXMSGfsGtP4flVnON8wy0Y&salt=648736798&prev=%3C%3C&day=18&month=9&year=2023&today=Heute&pages=1", 
+            "name": "Vorlesungsplan (Rapla)"
         },
         {
             "link": "https://www.dhbw-stuttgart.de/fileadmin/dateien/Semesterplaene/Technik/2022_Informatik.pdf",
