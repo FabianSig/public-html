@@ -7,9 +7,9 @@ import { LinkData } from '../shared/link-data';
   styleUrls: ['./links.component.scss']
 })
 export class LinksComponent {
-    @Input() data?: LinkData;
+  @Input() data?: LinkData;
 
-    openLink(){
-      window.open(this.data?.link, "_blank");
-  }
+  openLink(){
+    window.open(this.data?.link, "_blank");
+}
 }
