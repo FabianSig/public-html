@@ -18,7 +18,7 @@ import data from './shared/links.json';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'public-html';
+  title = 'DHBW-Landingpage';
 
   id = "tsparticles";
 
@@ -32,7 +32,7 @@ export class AppComponent {
   particlesOptions = {
     background: {
       color: {
-        value: "#0d47a1",
+        value: "#949494",
       },
     },
     fpsLimit: 120,
@@ -76,7 +76,7 @@ export class AppComponent {
           default: OutMode.bounce,
         },
         random: false,
-        speed: 6,
+        speed: 2.75,
         straight: false,
       },
       number: {
