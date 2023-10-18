@@ -10,6 +10,6 @@ export class LinksComponent {
   @Input() data?: LinkData;
 
   openLink(){
-    window.open(this.data?.link, "_blank");
+    window.open(this.data?.link, "_self");
 }
 }
