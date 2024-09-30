@@ -24,5 +24,6 @@ jobs:
           SSH_HOST: ${{ secrets.SSH_HOST }}
         run: |
           sshpass -p "$SSH_PASSWORD" ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST << 'EOF'
+          cd test
           git clone https://github.com/FabianSig/public-html.git
           EOF
