@@ -30,10 +30,12 @@ jobs:
 
       - name: Modify index.html
         run: |
+          # Find the path to index.html
+          INDEX_HTML_PATH=$(find ./dist -name index.html)
           # Remove 'type="module"' from index.html
-          sed -i 's/type="module"//g' ./dist/index.html
+          sed -i 's/type="module"//g' "$INDEX_HTML_PATH"
           # Replace <base href="./"> with <base href="/">
-          sed -i 's|<base href="./">|<base href="/">|g' ./dist/index.html
+          sed -i 's|<base href="./">|<base href="/">|g' "$INDEX_HTML_PATH"
 
       - name: Install sshpass
         run: sudo apt-get update && sudo apt-get install -y sshpass rsync
