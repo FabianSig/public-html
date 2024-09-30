@@ -46,5 +46,8 @@ jobs:
           SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
         run: |
+          # Find the output directory (the one inside dist)
+          OUTPUT_DIR=$(find ./dist -mindepth 1 -maxdepth 1 -type d)
+          # Copy only the contents of the output directory to the target directory
           sshpass -p "$SSH_PASSWORD" ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST 'mkdir -p /home/lehrefs.inf/inf22/inf22187/public-html/'
-          sshpass -p "$SSH_PASSWORD" rsync -av --delete ./dist/ $SSH_USER@$SSH_HOST:/home/lehrefs.inf/inf22/inf22187/public-html/
+          sshpass -p "$SSH_PASSWORD" rsync -av --delete "${OUTPUT_DIR}/" $SSH_USER@$SSH_HOST:/home/lehrefs.inf/inf22/inf22187/public-html/
