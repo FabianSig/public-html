@@ -26,7 +26,7 @@ jobs:
         run: npm install
 
       - name: Build Angular project
-        run: ng build --prod
+        run: ng build --configuration production
 
       - name: Install sshpass
         run: sudo apt-get update && sudo apt-get install -y sshpass rsync
