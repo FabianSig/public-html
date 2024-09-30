@@ -1,32 +1,8 @@
 {
     "modulLinks": [
         {
-            "link": "https://elearning.dhbw-stuttgart.de/moodle/course/view.php?id=17338",
-            "name": "Theoretische Informatik III"
-        },
-        {
-            "link": "https://elearning.dhbw-stuttgart.de/moodle/course/view.php?id=17340",
-            "name": "Datenbanken I"
-        },
-        {
-            "link": "https://elearning.dhbw-stuttgart.de/moodle/course/view.php?id=17337",
-            "name": "Mathematik II"
-        },
-        {
-            "link": "https://elearning.dhbw-stuttgart.de/moodle/course/view.php?id=17339",
-            "name": "Softwareengineering I"
-        },
-        {
-            "link": "https://nextcloud.dhbw-stuttgart.de/index.php/s/n5bLeDLcxtGrnJq",
-            "name": "Softwareengineering I (Dateiablage)"
-        },
-        {
-            "link": "https://wwwlehre.dhbw-stuttgart.de/~reimbold/",
-            "name": "Betriebssysteme"
-        },
-        {
-            "link": "https://wwwlehre.dhbw-stuttgart.de/~lombardo/knt-2023-2/",
-            "name": "Kommunikations- und Netztechnik"
+            "link": "https://elearning.dhbw-stuttgart.de/moodle/course/view.php?id=20896",
+            "name": "Cyber Security Basics"
         }
     ],
     
