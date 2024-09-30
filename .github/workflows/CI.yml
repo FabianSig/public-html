@@ -14,16 +14,28 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Install sshpass
-        run: sudo apt-get update && sudo apt-get install -y sshpass
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Specify the Node.js version compatible with your Angular project
 
-      - name: Clone repository on remote server using password authentication
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Angular project
+        run: ng build --prod
+
+      - name: Install sshpass
+        run: sudo apt-get update && sudo apt-get install -y sshpass rsync
+
+      - name: Copy compiled files to remote server using rsync
         env:
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
         run: |
-          sshpass -p "$SSH_PASSWORD" ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST << 'EOF'
-          cd test
-          git clone https://github.com/FabianSig/public-html.git
-          EOF
+          sshpass -p "$SSH_PASSWORD" ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST 'mkdir -p /home/lehrefs.inf/inf22/inf22187/public-html/'
+          sshpass -p "$SSH_PASSWORD" rsync -av --delete ./dist/ $SSH_USER@$SSH_HOST:/home/lehrefs.inf/inf22/inf22187/public-html/
