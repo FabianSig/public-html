@@ -1,6 +1,10 @@
 {
     "modulLinks": [
         {
+            "link": "https://elearning.dhbw-stuttgart.de/moodle/pluginfile.php/775737/mod_resource/content/0/Plan_JG2022_pr%C3%BCfungen_F.pdf",
+            "name": "Prüfungsleistungen 5. Semester"
+        },
+        {
             "link": "https://elearning.dhbw-stuttgart.de/moodle/course/view.php?id=20896",
             "name": "Cyber Security Basics"
         },
