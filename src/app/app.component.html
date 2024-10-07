@@ -7,18 +7,24 @@
 
 <div style="position: absolute; width: 100%;">
   <div class="panel">
-      <h1 class="center">TINF22F: Studienjahr 3</h1>
-      <h4 class="center">Wichtige DHBW-Seiten</h4>
+    <h1 class="center">TINF22F: Studienjahr 3</h1>
+    <h3 class="center">Wichtige DHBW-Seiten</h3>
+    <div>
       <app-links *ngFor="let item of dhbwLinks" [data]="item"></app-links>
+    </div>
   </div>
-  
+
   <div class="panel">
-      <h4 class="center">Module</h4>
+    <h3 class="center">Module</h3>
+    <div>
       <app-links *ngFor="let item of moduleLinks" [data]="item"></app-links>
+    </div>
   </div>
-  
+
   <div class="panel">
-      <h4 class="center">Github</h4>
+    <h3 class="center">Github</h3>
+    <div>
       <app-links *ngFor="let item of githubLinks" [data]="item"></app-links>
+    </div>
   </div>
 </div>
